@@ -6,7 +6,8 @@ import config from 'taxi-app/config/environment';
 
 export default DS.RESTAdapter.extend( {
     host: config.APP.api_host,
-    namespace: ''
+    namespace: '',
+    shouldBackgroundReloadRecord: false
 
     //ajaxError: function( jqXHR ){
     //    var error = this._super( jqXHR );

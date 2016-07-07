@@ -83,73 +83,6 @@ body{
 }
 ul.nav li.dropdown:hover ul.dropdown-menu { display: block; margin:0;}
 
-.viewport {
-    position: absolute;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    -ms-box-sizing: content-box;
-    -o-box-sizing: content-box;
-    box-sizing: content-box;
-}
-
-.viewport-h {
-    right: 0;
-    left: 0;
-    width: 100%;
-}
-
-.viewport-full {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.viewport-right {
-    left: auto;
-}
-
-.viewport-bottom {
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.viewport-content {
-    top: 72px;
-}
-
-.viewport-content-with-nav {
-    top: 123px;
-    margin-bottom: 30px;
-    min-width: 1380px;
-}
-
-.viewport-t-pane-primary-with-toolbar {
-    bottom: 50px;
-    /*padding-top: 40px;*/
-}
-
-.viewport-t-pane-primary {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-}
-
-.viewport-t-pane-secondary-with-toolbar {
-    bottom: 50px;
-    /*padding-top: 40px;*/
-}
-
-.viewport-t-pane-secondary {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-}
 
 .pane {
     border-left: 1px solid #e0e2e3;
@@ -162,10 +95,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu { display: block; margin:0;}
     /*padding-top: 40px;*/
 }
 
-.pane-primary /*, .pane-primary-content*/
-{
-    /*height: 100%;*/
-}
+
 
 .pane-primary-content {
     margin-left: 10px;
@@ -174,8 +104,36 @@ ul.nav li.dropdown:hover ul.dropdown-menu { display: block; margin:0;}
     padding-top: 40px;
 }
 
-.pane-secondary {
-    width: 580px;
-    left: auto;
-    /*padding-top: 40px;*/
+
+
+.table > thead > tr > th {
+    border-bottom-width: 1px;
+    font-weight: 100;
+}
+
+.table > thead {
+    font-size: 0.8em;
+    text-transform: uppercase;
+
+}
+
+.table-high > thead > tr > th,
+.table-high > tbody > tr > th,
+.table-high > tfoot > tr > th,
+.table-high > thead > tr > td,
+.table-high > tbody > tr > td,
+.table-high > tfoot > tr > td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button {
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

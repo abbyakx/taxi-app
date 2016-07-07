@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'taxi-app',
-    environment: environment,
+    //environment: environment,
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -16,6 +16,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+
       'api_host': 'http://localhost:3000'
     }
   };

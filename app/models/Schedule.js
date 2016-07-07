@@ -7,6 +7,7 @@ export default DS.Model.extend( {
     driver_id: DS.attr(),
     vehicle_id: DS.attr(),
     status: DS.attr('number'),
+    driver_name: DS.attr(),
 
     driver: DS.belongsTo( 'driver', { async: true } )
 

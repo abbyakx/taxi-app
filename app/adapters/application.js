@@ -2,7 +2,7 @@
  * Created by abby on 7/6/16.
  */
 import DS from 'ember-data';
-import config from './config/environment';
+import config from 'taxi-app/config/environment';
 
 export default DS.RESTAdapter.extend( {
     host: config.APP.api_host,

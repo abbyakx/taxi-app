@@ -7,16 +7,16 @@ var Router = Ember.Router.extend( {
 
 Router.map( function(){
     this.route( 'schedules', { path: '/' } );
-    this.route('schedules/add' );
-    this.route('schedules/view', {path:'/schedules/:schedule_id'});
+    this.route( 'schedules/add' );
+    this.route( 'schedules/view', { path: '/schedules/:schedule_id' } );
 
-    this.route('drivers', {path: '/drivers'});
-    this.route('drivers/add' );
-    this.route('drivers/view', {path:'/drivers/:driver_id'});
+    this.route( 'drivers', { path: '/drivers' } );
+    this.route( 'drivers/add' );
+    this.route( 'drivers/view', { path: '/drivers/:driver_id' } );
 
-    this.route('vehicles', {path: '/vehicles'});
-    this.route('vehicles/add' );
-    this.route('vehicles/view', {path:'/vehicles/:vehicle_id'});
+    this.route( 'vehicles', { path: '/vehicles' } );
+    this.route( 'vehicles/add' );
+    this.route( 'vehicles/view', { path: '/vehicles/:vehicle_id' } );
 
 } );
 

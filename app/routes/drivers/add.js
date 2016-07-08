@@ -14,6 +14,3 @@ export default Ember.Route.extend( {
 
 
 } );
-/**
- * Created by abby on 7/7/16.
- */

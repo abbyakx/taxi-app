@@ -6,12 +6,9 @@ export default Ember.Controller.extend( {
             var self = this;
             var vehicle = self.get( 'vehicle' );
             vehicle.status = 1;
-
             vehicle.save().then( function(){
-
                 self.transitionToRoute( 'vehicle' );
                 // transition wherever
-
             } );
         }
     }

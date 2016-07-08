@@ -17,7 +17,6 @@
         <tbody>
         {{#each driver in model}}
             {{#link-to 'drivers/view' driver.id tagName='tr' class='list-link'}}
-
                 <td>
                     {{driver.first_name}}
                 </td>
@@ -27,7 +26,6 @@
                 <td>
                     {{driver.license_number}}
                 </td>
-
             {{/link-to}}
         {{/each}}
         </tbody>

@@ -60,35 +60,35 @@
 </div>
 
 <div class="center">
-{{#if schedule}}
-    <table>
-        <thead>
-        <tr>
-            <th>Day Of Week</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Vehicle Id</th>
-        </tr>
-        </thead>
-        <tbody>
-        {{#each schedule in schedule}}
-        <tr><
-            <td>
-                {{schedule.day_of_week}}
-            </td>
-            <td>
-                {{schedule.start_time}}
-            </td>
-            <td>
-                {{schedule.end_time}}
-            </td>
-            <td>
-                {{schedule.vehicle_id}}
-            </td>
+    {{#if schedule}}
+        <table>
+            <thead>
+            <tr>
+                <th>Day Of Week</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Vehicle Id</th>
             </tr>
-        {{/each}}
-        </tbody>
+            </thead>
+            <tbody>
+            {{#each schedule in schedule}}
+                <tr><
+                    <td>
+                        {{schedule.day_of_week}}
+                    </td>
+                    <td>
+                        {{schedule.start_time}}
+                    </td>
+                    <td>
+                        {{schedule.end_time}}
+                    </td>
+                    <td>
+                        {{schedule.vehicle_id}}
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
 
-    </table>
-{{/if}}
+        </table>
+    {{/if}}
 </div>

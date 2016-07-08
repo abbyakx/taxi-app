@@ -12,13 +12,9 @@ export default Ember.Controller.extend( {
                     last_name: self.get( 'driver.last_name' ),
                     license_number: self.get( 'driver.license_number' )
                 } );
-
-            console.log(newDriver)
             newDriver.save().then( function(){
-
                 self.transitionToRoute( 'drivers' );
                 // transition wherever
-
             } );
         }
     }

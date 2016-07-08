@@ -5,7 +5,6 @@ export default Ember.Controller.extend( {
 
     actions: {
         save: function(){
-
             var self = this;
             var newVehicle = self.store.createRecord( 'Vehicle',
                 {
@@ -14,13 +13,10 @@ export default Ember.Controller.extend( {
                     model: self.get( 'vehicle.model' )
                 } );
             newVehicle.save().then( function(){
-
                 self.transitionToRoute( 'vehicles' );
                 // transition wherever
-
             } );
         }
     }
-
 
 } );

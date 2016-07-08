@@ -8,7 +8,6 @@ export default Ember.Route.extend( {
 
     activate: function(){
         document.title = "Schedules";
-    },
-
+    }
 
 } );

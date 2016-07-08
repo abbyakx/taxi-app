@@ -8,9 +8,5 @@ export default Ember.Route.extend( {
             last_name: null,
             license_number: null
         } );
-
-
     },
-
-
 } );

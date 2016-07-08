@@ -8,8 +8,6 @@ export default Ember.Route.extend( {
             make: null,
             model: null
         } );
-
-
     },
 
 } );

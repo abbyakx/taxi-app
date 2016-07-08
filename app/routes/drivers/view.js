@@ -11,9 +11,7 @@ export default Ember.Route.extend( {
         controller.store.query( 'schedule', { driver_id: model.id } ).then( function( schedules ){
             controller.set( 'schedule', schedules );
         } );
-
     }
-
 
 } );
 

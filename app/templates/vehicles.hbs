@@ -17,7 +17,6 @@
         <tbody>
         {{#each vehicle in model}}
             {{#link-to 'vehicles/view' vehicle.id tagName='tr' class='list-link'}}
-
                 <td>
                     {{vehicle.plate_number}}
                 </td>
@@ -27,7 +26,6 @@
                 <td>
                     {{vehicle.model}}
                 </td>
-
             {{/link-to}}
         {{/each}}
         </tbody>

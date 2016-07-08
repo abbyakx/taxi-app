@@ -6,23 +6,23 @@
     <div class="row col-md-6">
         <div class="form-group has-feedback required">
             <label>Plate Number</label>
-            {{input value=vehicle.plate_number type='text' class='form-control' placeholder='Plate Number'}}
+            {{input value=vehicle.plate_number type='string' class='form-control' placeholder='Plate Number'}}
 
         </div>
     </div>
     <div class="row col-md-6">
         <div class="form-group has-feedback required">
             <label>Make</label>
-            {{input value=vehicle.make type='text' class='form-control' placeholder='Make'}}
+            {{input value=vehicle.make type='string' class='form-control' placeholder='Make'}}
 
         </div>
     </div>
     <div class="row col-md-6">
         <div class="form-group has-feedback required">
             <label>Model</label>
-            {{input value=vehicle.model type='text' class='form-control' placeholder='Model'}}
+            {{input value=vehicle.model type='string' class='form-control' placeholder='Model'}}
 
         </div>
     </div>
-    <div class="button"  {{action "createVehilce" }}>Save</div>
+    <div class="button"  {{action "save" }}>Save</div>
 </div>

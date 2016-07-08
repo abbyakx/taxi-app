@@ -12,7 +12,7 @@
         </thead>
         <tbody>
         {{#each schedule in model}}
-            {{#link-to 'schdule/view' driver.id tagName='tr' class='list-link'}}
+            {{#link-to 'schedules/view' schedule.id tagName='tr' class='list-link'}}
 
                 <td>
                     {{schedule.driver_name}}

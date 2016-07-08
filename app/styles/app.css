@@ -56,25 +56,13 @@ body {
     padding: 26px 15px;
 }
 
-.table > thead > tr > th {
-    border-bottom-width: 1px;
-    font-weight: 100;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.table > thead {
-    font-size: 0.8em;
-    text-transform: uppercase;
-
-}
-
-.table-high > thead > tr > th,
-.table-high > tbody > tr > th,
-.table-high > tfoot > tr > th,
-.table-high > thead > tr > td,
-.table-high > tbody > tr > td,
-.table-high > tfoot > tr > td {
-    padding-top: 10px;
-    padding-bottom: 10px;
+table, th, td {
+    border: 1px solid black;
 }
 
 .button {
@@ -86,6 +74,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    position: relative;
 }
 
 .row {

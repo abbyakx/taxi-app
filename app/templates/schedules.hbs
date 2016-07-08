@@ -1,38 +1,31 @@
 {{nav-bar}}
-<div class="center">
-    {{#link-to 'schedules/add'}}
-        <div class="button">Add Schedule</div>
-    {{/link-to}}
-
-    <table class="table table-hover table-high">
+<
+<div class="'center">
+    <table>
         <thead>
         <tr>
-            <th class="col-xs-3">Driver Name</th>
-            <th class="col-xs-3">Start Time</th>
-            <th class="col-xs-3">End Time</th>
-            <th class="col-xs-3">Vehicle</th>
+            <th>Driver Name</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Vehicle Id</th>
         </tr>
         </thead>
         <tbody>
         {{#each schedule in model}}
-            {{#link-to 'schedules/view' schedule.id}}
-                <td class=" valign-middle">
+            {{#link-to 'schdule/view' driver.id tagName='tr' class='list-link'}}
+
+                <td>
                     {{schedule.driver_name}}
                 </td>
-                <td class=" valign-middle">
+                <td>
                     {{schedule.start_time}}
                 </td>
-                <td class=" valign-middle">
+                <td>
                     {{schedule.end_time}}
                 </td>
-                {{#if schedule.vehicle_id}}
-                    <td class="valign-middle">
-                        {{schedule.vehicle_id}}
-                    </td>
-                {{else }}
-                    <td>
-                    </td>
-                {{/if}}
+                <td>
+                    {{schedule.vehicle_id}}
+                </td>
             {{/link-to}}
         {{/each}}
         </tbody>

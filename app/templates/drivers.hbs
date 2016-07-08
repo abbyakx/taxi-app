@@ -4,31 +4,33 @@
     {{#link-to 'drivers/add'}}
         <div class="button">Add Driver</div>
     {{/link-to}}
-
-    <table class="table table-hover table-high">
+</div>
+<div class="'center">
+    <table>
         <thead>
         <tr>
-            <th class="col-xs-4">First Name</th>
-            <th class="col-xs-4">Last Name</th>
-            <th class="col-xs-4">License</th>
-
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>License</th>
         </tr>
         </thead>
         <tbody>
-
         {{#each driver in model}}
-            {{#link-to 'drivers/view' driver.id}}
-                <td class=" valign-middle">
+            {{#link-to 'drivers/view' driver.id tagName='tr' class='list-link'}}
+
+                <td>
                     {{driver.first_name}}
                 </td>
-                <td class=" valign-middle">
+                <td>
                     {{driver.last_name}}
                 </td>
-                <td class=" valign-middle">
+                <td>
                     {{driver.license_number}}
                 </td>
+
             {{/link-to}}
         {{/each}}
         </tbody>
     </table>
 </div>
+

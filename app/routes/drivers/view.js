@@ -2,13 +2,16 @@ import Ember from 'ember';
 //import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixin';
 
 export default Ember.Route.extend( {
-    //model: function( params  ){
-    //    return this.store.query('driver', params);
-    //},
-    //
-    //activate: function() {
-    //    document.title = "Drivers";
-    //},
+    model: function( params  ){
+
+        return this.store.find('driver', params.driver_id);
+    },
+
+    setupController: function( controller, model ){
+        controller.set( 'driver', model );
+    }
+
+
 
 
 } );

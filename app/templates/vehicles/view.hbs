@@ -1,6 +1,35 @@
-{{nav-bar}}
+
 <div class="center">
     {{#link-to 'vehicles'}}
         <div class="button">Back</div>
     {{/link-to}}
+    <div class ="button" {{action "delete" }}>Delete Vehicle</div>
+</div>
+
+<div class="center">
+
+
+    <div class="row col-md-6">
+
+        <div class="form-group ">
+            <label>Plate</label>
+            {{input value=vehicle.plate_number type='text' class='form-control'  }}
+
+        </div>
+    </div>
+    <div class="row col-md-6">
+        <div class="form-group ">
+            <label>Make</label>
+            {{input value=vehicle.make type='text' class='form-control'  }}
+
+        </div>
+    </div>
+    <div class="row col-md-6">
+        <div class="form-group ">
+            <label>Model</label>
+            {{input value=vehicle.model type='text'}}
+        </div>
+    </div>
+
+
 </div>

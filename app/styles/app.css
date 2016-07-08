@@ -1,6 +1,7 @@
 body {
     background-color: #DAA520;
     height: 100%;
+    font-family: fantasy;
 }
 
 .no-padding {
@@ -9,6 +10,9 @@ body {
 
 .navbar-header {
     float: right;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-right: 10px;
 }
 
 .navbar-collapse {
@@ -40,9 +44,9 @@ body {
 }
 
 .navbar-default {
-    background-color: #fff;
-    border-bottom: 1px solid #e7e7e7;
+    background-color: #000000;
     z-index: 10;
+    color:#F0FFFF;
 }
 
 .navbar-primary {

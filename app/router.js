@@ -10,6 +10,7 @@ Router.map( function(){
     this.route( 'schedules/add' );
     this.route( 'schedules/view', { path: '/schedules/:schedule_id' } );
 
+
     this.route( 'drivers', { path: '/drivers' } );
     this.route( 'drivers/add' );
     this.route( 'drivers/view', { path: '/drivers/:driver_id' } );

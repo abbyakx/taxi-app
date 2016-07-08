@@ -1,9 +1,8 @@
 {{nav-bar}}
 
-
-
+<div class="center">
     {{#link-to 'drivers/add'}}
-        <div class ="button">Add Driver</div>
+        <div class="button">Add Driver</div>
     {{/link-to}}
 
     <table class="table table-hover table-high">
@@ -19,16 +18,17 @@
 
         {{#each driver in model}}
             {{#link-to 'drivers/view' driver.id}}
-            <td class=" valign-middle">
-                {{driver.first_name}}
-            </td>
-            <td class=" valign-middle">
-                {{driver.last_name}}
-            </td>
-            <td class=" valign-middle">
-                {{driver.license_number}}
-            </td>
-        {{/link-to}}
+                <td class=" valign-middle">
+                    {{driver.first_name}}
+                </td>
+                <td class=" valign-middle">
+                    {{driver.last_name}}
+                </td>
+                <td class=" valign-middle">
+                    {{driver.license_number}}
+                </td>
+            {{/link-to}}
         {{/each}}
         </tbody>
     </table>
+</div>

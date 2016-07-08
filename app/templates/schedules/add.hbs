@@ -1,27 +1,29 @@
 {{nav-bar}}
+<div class="center">
 
-{{#link-to 'schedules'}}
-    <div class ="button">Back</div>
-{{/link-to}}
-<div class="row col-md-6">
-    <div class="form-group has-feedback required">
-        <label>Day of Week</label>
-        {{input value=schedule.day_of_week type='text' class='form-control' placeholder='Day of Week'}}
+    {{#link-to 'schedules'}}
+        <div class="button">Back</div>
+    {{/link-to}}
+    <div class="row col-md-6">
+        <div class="form-group has-feedback required">
+            <label>Day of Week</label>
+            {{input value=schedule.day_of_week type='text' class='form-control' placeholder='Day of Week'}}
 
+        </div>
     </div>
-</div>
-<div class="row col-md-6">
-    <div class="form-group has-feedback required">
-        <label>Start Time</label>
-        {{input value=schedule.start_time type='text' class='form-control' placeholder='Start time'}}
+    <div class="row col-md-6">
+        <div class="form-group has-feedback required">
+            <label>Start Time</label>
+            {{input value=schedule.start_time type='text' class='form-control' placeholder='Start time'}}
 
+        </div>
     </div>
-</div>
-<div class="row col-md-6">
-    <div class="form-group has-feedback required">
-        <label>End Time</label>
-        {{input value=schedule.end_time type='text' class='form-control' placeholder='End Time'}}
+    <div class="row col-md-6">
+        <div class="form-group has-feedback required">
+            <label>End Time</label>
+            {{input value=schedule.end_time type='text' class='form-control' placeholder='End Time'}}
+        </div>
     </div>
-</div>
 
-<div class ="button"  {{action "createVehilce" }}>Save</div>
+    <div class="button"  {{action "createVehilce" }}>Save</div>
+</div>

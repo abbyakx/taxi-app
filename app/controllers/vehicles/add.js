@@ -14,13 +14,11 @@ export default Ember.Controller.extend( {
             newVehicle.save().then(
                 function(){
                     self.set( 'isLocked', false );
-                    self.transitionToRoute('vehicles');
+                    self.transitionToRoute( 'vehicles' );
                 }
-
             )
         }
     }
-
 
 
 } );

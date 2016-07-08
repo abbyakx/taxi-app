@@ -9,6 +9,7 @@ export default Ember.Route.extend( {
 
     setupController: function( controller, model ){
         controller.set( 'schedule', model );
+        console.log(model)
     }
 
 

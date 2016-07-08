@@ -4,7 +4,7 @@
     {{/link-to}}
 
     <div class="button"  {{action "update" }}>Save</div>
-    <div class="button"  {{action "addSchedule" }}>Add Schedule</div>
+
 
 </div>
 
@@ -56,8 +56,39 @@
             {{input value=schedule.end_time type='text' class='form-control' placeholder='End Time'}}
         </div>
     </div>
+    <div class="button"  {{action "addSchedule" }}>Add Schedule</div>
 </div>
 
 <div class="center">
+{{#if schedule}}
+    <table>
+        <thead>
+        <tr>
+            <th>Day Of Week</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Vehicle Id</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each schedule in schedule}}
+        <tr><
+            <td>
+                {{schedule.day_of_week}}
+            </td>
+            <td>
+                {{schedule.start_time}}
+            </td>
+            <td>
+                {{schedule.end_time}}
+            </td>
+            <td>
+                {{schedule.vehicle_id}}
+            </td>
+            </tr>
+        {{/each}}
+        </tbody>
 
+    </table>
+{{/if}}
 </div>

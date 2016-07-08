@@ -13,6 +13,7 @@ export default Ember.Controller.extend( {
                     license_number: self.get( 'driver.license_number' )
                 } );
 
+            console.log(newDriver)
             newDriver.save().then( function(){
 
                 self.transitionToRoute( 'drivers' );

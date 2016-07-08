@@ -23,12 +23,12 @@ export default Ember.Controller.extend( {
             var newSchedule = self.store.createRecord( 'Schedule',
                 {
                     driver_id : self.get('driver.id'),
-                    dau_of_week: self.get( 'schedule.day_of_week' ),
+                    day_of_week: self.get( 'schedule.day_of_week' ),
                     start_time: self.get( 'schedule.start_time' ),
                     end_time: self.get('schedule.end_time')
                 } );
 
-            console.log(newSchedule.driver_id);
+
             console.log(newSchedule);
 
 

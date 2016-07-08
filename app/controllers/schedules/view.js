@@ -6,7 +6,6 @@ export default Ember.Controller.extend( {
             var self = this;
             var schedule = self.get( 'schedule' );
 
-
             schedule.save().then( function(){
 
                 self.transitionToRoute( 'schedules' );

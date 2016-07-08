@@ -8,14 +8,10 @@ export default Ember.Route.extend( {
 
     setupController: function( controller, model ){
         controller.set( 'driver', model );
+        controller.store.query( 'schedule', { driver_id: model.id } ).then( function( schedules ){
+            controller.set( 'schedule', schedules );
+        } );
 
-        controller.set('schedule',{
-                day_of_week: null,
-                driver_id: null,
-                start_time: null,
-                end_time: null
-
-            })
     }
 
 

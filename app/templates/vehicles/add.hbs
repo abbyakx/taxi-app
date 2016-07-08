@@ -1,0 +1,27 @@
+{{nav-bar}}
+
+{{#link-to 'vehicles'}}
+    <div class ="button">Back</div>
+{{/link-to}}
+<div class="row col-md-6">
+    <div class="form-group has-feedback required">
+        <label>Plate Number</label>
+        {{input value=vehicle.plate_number type='text' class='form-control' placeholder='Plate Number'}}
+
+    </div>
+</div>
+<div class="row col-md-6">
+    <div class="form-group has-feedback required">
+        <label>Make</label>
+        {{input value=vehicle.make type='text' class='form-control' placeholder='Make'}}
+
+    </div>
+</div>
+<div class="row col-md-6">
+    <div class="form-group has-feedback required">
+        <label>Model</label>
+        {{input value=vehicle.model type='text' class='form-control' placeholder='Model'}}
+
+    </div>
+</div>
+<div class ="button"  {{action "createVehilce" }}>Save</div>

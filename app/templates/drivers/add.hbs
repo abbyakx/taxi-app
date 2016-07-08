@@ -1,0 +1,27 @@
+{{nav-bar}}
+
+
+{{#link-to 'drivers'}}
+    <div class ="button">Back</div>
+{{/link-to}}
+<div class="row col-md-6">
+    <div class="form-group has-feedback required">
+        <label>First Name</label>
+        {{input value=drvier.frist_name type='text' class='form-control' placeholder='First Name'}}
+
+    </div>
+</div>
+<div class="row col-md-6">
+    <div class="form-group has-feedback required">
+        <label>Last Name</label>
+        {{input value=driver.last_name type='text' class='form-control' placeholder='Last Name'}}
+
+    </div>
+</div>
+<div class="row col-md-6">
+    <div class="form-group has-feedback required">
+        <label>License Number</label>
+        {{input value=driver.license_number type='text' class='form-control' placeholder='License Number'}}
+    </div>
+</div>
+<div class ="button"  {{action "createVehilce" }}>Save</div>

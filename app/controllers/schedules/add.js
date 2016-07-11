@@ -16,6 +16,7 @@ export default Ember.Controller.extend( {
     actions: {
         createSchedule: function(){
             var self = this;
+            
             var newSchedule = self.store.createRecord( 'Schedule',
                 {
                     driver_id: self.get( 'schedule.driver_id' ),

@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend( {
-    day_of_week: DS.attr(),
+    day_of_week: DS.attr('number'),
     start_time: DS.attr(),
     end_time: DS.attr(),
     driver_id: DS.attr(),

@@ -1,6 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend( {
+
+
+
     actions: {
         update: function(){
             var self = this;

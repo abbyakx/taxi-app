@@ -8,6 +8,9 @@ export default Ember.Route.extend( {
 
     setupController: function( controller, model ){
         controller.set( 'schedule', model );
+        controller.store.query('vehicle', {id: model.vehicle_id}).then(function(vehicle){
+            controller.set('vehicle', vehicle);
+        });
     }
 
 

@@ -2,6 +2,16 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend( {
 
+    scheduleTypes: [
+        { label: 'Sunday', val: 0},
+        { label: 'Monday', val: 1},
+        { label: 'Tuesday', val: 2},
+        { label: 'Wednesday', val: 3},
+        { label: 'Thursday', val: 4},
+        { label: 'Friday', val: 5},
+        {label: 'Saturday', val: 6}
+    ],
+
     actions: {
         update: function(){
             var self = this;
@@ -12,15 +22,7 @@ export default Ember.Controller.extend( {
             } );
         },
 
-        scheduleTypes: [
-            { label: 'Sunday', val: 0},
-            { label: 'Monday', val: 1},
-            { label: 'Tuesday', val: 2},
-            { label: 'Wednesday', val: 3},
-            { label: 'Thursday', val: 4},
-            { label: 'Friday', val: 5},
-            {label: 'Saturday', val: 6}
-        ],
+
 
         addSchedule: function(){
             var self = this;

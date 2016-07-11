@@ -18,7 +18,18 @@ module.exports = function(environment) {
       // when it is created
 
       'api_host': 'http://localhost:3000'
+    },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+
+      'font-src': "'self'",
+      'connect-src': "'self'",
+      'img-src': "'self'",
+      'style-src': "'self'",
+      'media-src': "'self'"
     }
+
+
   };
 
 

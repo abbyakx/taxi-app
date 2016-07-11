@@ -13,4 +13,6 @@ export default Ember.Controller.extend( {
         { label: 'Friday', val: 5},
         {label: 'Saturday', val: 6}
     ],
+
+
 } );

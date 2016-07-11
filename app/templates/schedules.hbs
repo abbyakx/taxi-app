@@ -1,9 +1,21 @@
 {{nav-bar}}
-<
+<div class="center">
+    <div class="form-group col-md-5 required has-feedback">
+        <label>Schedule Day</label>
+        {{view 'select'
+        value=schedule.day_of_week
+        content=scheduleTypes
+        optionValuePath='content.val'
+        optionLabelPath='content.label'
+        prompt='Please select a day of the week'
+        class='form-control'}}
+    </div>
+</div>
 <div class="'center">
     <table>
         <thead>
         <tr>
+            <th>Day of Week</th>
             <th>Driver Name</th>
             <th>Start Time</th>
             <th>End Time</th>
@@ -13,7 +25,9 @@
         <tbody>
         {{#each schedule in model}}
             {{#link-to 'schedules/view' schedule.id tagName='tr' class='list-link'}}
-
+                <td>
+                    {{schedule.str_day}}
+                </td>
                 <td>
                     {{schedule.driver_name}}
                 </td>

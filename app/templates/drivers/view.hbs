@@ -37,10 +37,19 @@
 </div>
 <div class="center">
     <div class="row col-md-6">
-        <div class="form-group has-feedback required">
-            <label>Day of Week</label>
-            {{input value=schedule.day_of_week type='text' class='form-control' placeholder='Day of Week'}}
-
+        <div class="row col-md-6">
+            <div class="center">
+                <div class="form-group col-md-5 required has-feedback">
+                    <label>Schedule Day</label>
+                    {{view 'select'
+                    value=schedule.day_of_week
+                    content=scheduleTypes
+                    optionValuePath='content.val'
+                    optionLabelPath='content.label'
+                    prompt='Please select a day of the week'
+                    class='form-control'}}
+                </div>
+            </div>
         </div>
     </div>
     <div class="row col-md-6">
@@ -74,7 +83,7 @@
             {{#each schedule in schedule}}
                 <tr><
                     <td>
-                        {{schedule.day_of_week}}
+                        {{schedule.str_day}}
                     </td>
                     <td>
                         {{schedule.start_time}}

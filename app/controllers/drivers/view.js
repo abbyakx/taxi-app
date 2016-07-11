@@ -22,8 +22,6 @@ export default Ember.Controller.extend( {
             } );
         },
 
-
-
         addSchedule: function(){
             var self = this;
             console.log( self.get( 'schedule.day_of_week' ) );

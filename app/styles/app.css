@@ -61,16 +61,27 @@ body {
 }
 
 table {
+    background-color: #000000;
+    color: #ffffff;
     width: 100%;
     border-collapse: collapse;
+
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 2px solid #ffffff;
+
+}
+
+th {
+    height: 50px;
+}
+td{
+    text-align: left;
 }
 
 .button {
-    background-color: #000000; /* Green */
+    background-color: #000000;
     border: none;
     color: white;
     padding: 15px 32px;

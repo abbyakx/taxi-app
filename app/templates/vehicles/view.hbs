@@ -36,8 +36,7 @@
         <table>
             <thead>
             <tr>
-                <th>Day of Week</th>
-                <th>Driver Name</th>
+                <th>Day Of Week</th>
                 <th>Start Time</th>
                 <th>End Time</th>
                 <th>Vehicle Id</th>
@@ -45,12 +44,9 @@
             </thead>
             <tbody>
             {{#each schedule in schedule}}
-
+                <tr><
                     <td>
                         {{schedule.str_day}}
-                    </td>
-                    <td>
-                        {{schedule.driver_name}}
                     </td>
                     <td>
                         {{schedule.start_time}}
@@ -61,9 +57,10 @@
                     <td>
                         {{schedule.vehicle_id}}
                     </td>
-
+                </tr>
             {{/each}}
             </tbody>
+
         </table>
     {{/if}}
 </div>

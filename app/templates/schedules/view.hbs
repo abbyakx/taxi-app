@@ -6,13 +6,14 @@
     <div class="button" {{ action "update"}}>Save</div>
 </div>
 <div class="center">
-    <div class="row col-md-6">
-        {{schedule.day_of_week }}
+    <div class="row col-md-6" >
+        <label>Day of week: </label>
+       <b> {{schedule.str_day }}</b>
     </div>
     <div class="row col-md-6">
-        <div class="form-group ">
+        <div class="form-group">
             <label>Start Time</label>
-            {{input value=schedule.start_time type='text'  }}
+            {{input value=schedule.start_time type='text' }}
         </div>
     </div>
     <div class="row col-md-6">
@@ -22,9 +23,13 @@
         </div>
     </div>
     <div class="row col-md-6">
-        <div class="form-group">
+        <div class="form-group col-md-5 required has-feedback">
             <label>Vehicle</label>
-            {{input value=schedule.vehicle_id type='text'  }}
+            {{view 'select'
+            value=vehicle.make
+            content=vehicle
+            prompt='Please select a Vehicle'
+            class='form-control'}}
         </div>
     </div>
 

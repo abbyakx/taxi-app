@@ -32,3 +32,39 @@
 
 
 </div>
+<div class="center">
+    {{#if schedule}}
+        <table>
+            <thead>
+            <tr>
+                <th>Day of Week</th>
+                <th>Driver Name</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Vehicle Id</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each schedule in schedule}}
+
+                    <td>
+                        {{schedule.str_day}}
+                    </td>
+                    <td>
+                        {{schedule.driver_name}}
+                    </td>
+                    <td>
+                        {{schedule.start_time}}
+                    </td>
+                    <td>
+                        {{schedule.end_time}}
+                    </td>
+                    <td>
+                        {{schedule.vehicle_id}}
+                    </td>
+
+            {{/each}}
+            </tbody>
+        </table>
+    {{/if}}
+</div>

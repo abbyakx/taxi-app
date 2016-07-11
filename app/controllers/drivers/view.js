@@ -11,6 +11,7 @@ export default Ember.Controller.extend( {
                 // transition wherever
             } );
         },
+
         scheduleTypes: [
             { label: 'Sunday', val: 0},
             { label: 'Monday', val: 1},
